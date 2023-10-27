@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    @import url(https://db.onlinewebfonts.com/c/060e116a70e3096c52db16f61aaab194?family=Sofia+Pro+Regular);
+
+    @font-face {
+        font-family: "Sofia Pro Regular";
+        src: url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.eot");
+        src: url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.svg#Sofia Pro Regular")format("svg");
+    }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .homepage{
+            width: 100vw;
+            height: 45vh;
+            background: #fff5da;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .imgicon {
+            scale: 0.3;
+            margin-right: 70px;
+            margin-top: -70px;
+        }
+
+        .imgquran{
+            width: 60px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        .quran {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: absolute;
+            font-weight: 200;
+            left: 0;
+            top: 0;
+            margin-top: 30px;
+            margin-left: 90px;
+            font-size: 35px;
+            color: #000000;
+        }
+
+        .textquran {
+            overflow-y: hidden;
+            position: absolute;
+            margin-top: 200px;
+            font-size: 40px;
+            font-family: 'Sofia Pro';
+            text-align: center;
+            font-weight: 500;
+            margin-right: 70px;
+        }
+
+
+        .scroll1{
+            font-family: 'Sofia Pro';
+            font-size: 18px;
+            color: #daca90;
+            margin-top: 23vh;
+            position: absolute;
+            right: 0;
+            transform: rotate(90deg);
+        }
+
+        .garis {
+            width: 100vw;
+            height: 8vh;
+            background: #e2cb8d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .welcome-text{
+            position: relative;
+            font-size: 40px;
+            animation: moveLeftToRight 13s linear infinite reverse;
+            white-space: nowrap;
+            letter-spacing: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+            font-style: italic;
+            width: 180vw;
+        }
+
+        .welcome-text span{
+            margin-right: 7%;
+        }
+
+
+        @keyframes moveLeftToRight {
+            0% {
+                transform: translateX(-75%); /* Mulai dari kiri */
+            }
+            100% {
+                transform: translateX(80%); /* Berakhir di kanan */
+            }
+        }
+
+        .container {
+            width: 100vw;
+            background: #fffaec;
+        }
+
+        .area-quran{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 24% 24% 24%;
+            row-gap: 30px ;
+            padding: 50px;
+        }
+
+        .card-quran {
+            width: 20vw;
+            height: 17vh;
+            border: #eae4d6 2.5px solid;
+            border-radius: 10px;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            transition: scale 0.5s ease;
+        }
+
+        .card-quran:hover{
+            scale: 1.1;
+        }
+
+        .kotak-nomor{
+            width: 110px;
+            height: 40px;
+            background: #e3eade;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-family: 'Sofia Pro';
+            margin-left: 20px;
+            margin-top: 15px;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+
+        .area-nama {
+            width: 23vw;
+        }
+
+        .nama-surat{
+            font-family: 'Sofia Pro';
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 15px;
+            color: #085e51;
+        }
+
+        .trans-eng{
+            margin-left: 17px;
+            font-size: 14px;
+            font-family: 'Sofia Pro';
+            color: #969696;
+            margin-top: 3px;
+        }
+
+        .area-kanan {
+            /* background: #085e51; */
+            width: 100%;
+            text-align: right;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .trans-arab {
+            font-family: 'Sofia Pro';
+            color: #085e51;
+            font-size: 22px;
+        }
+
+        .ayat {
+            font-family: 'Sofia Pro';
+            font-size: 14px;
+            margin-top: 3px;
+            color: #969696;
+        }
+
+        audio {
+            position: absolute;
+            display: flex;
+            margin-top: 90px;
+            width: 16vw;
+        }
+
+        @media screen and (max-width : 768px){
+            .area-quran{
+            grid-template-columns: 100%;
+        }
+
+        .imgicon {
+            margin-right: -5px;
+            scale: 0.25;
+            margin-top: -60px;
+        }
+
+        .imgquran{
+            width: 40px;
+            margin-top: 13px;
+            margin-left: 30px;
+        }
+
+        .quran {
+            margin-top: 20px;
+            margin-left: 70px;
+            font-size: 23px;
+        }
+
+        .scroll1{
+            margin-top: -27vh;
+            margin-right: -37px;
+            font-size: 13px;
+        }
+
+        .textquran {
+            margin-right: 0px;
+            margin-top: 190px;
+            font-size: 35px;
+        }
+
+        .garis {
+            width: 100vw;
+            height: 6vh;
+        }
+
+        .welcome-text{
+            font-size: 30px;
+            letter-spacing: 10px;
+            width: 310vw;
+        }
+
+        @keyframes moveLeftToRight {
+            0% {
+                transform: translateX(-65%); /* Mulai dari kiri */
+            }
+            100% {
+                transform: translateX(70%); /* Berakhir di kanan */
+            }
+        }
+
+        .card-quran {
+            width: 100%;
+            height: 20vh;
+            border: #eae4d6 2.5px solid;
+            border-radius: 10px;
+            transition: scale 0.5s ease;
+        }
+
+        .kotak-nomor{
+            width: 120px;
+            height: 40px;
+        }
+
+        .area-nama {
+            width: 90vw;
+        }
+
+        .nama-surat{
+            font-size: 18px;
+        }
+
+        .trans-eng{
+            font-size: 12px;
+        }
+
+        .area-kanan {
+            /* background: #085e51; */
+            width: 80%;
+        }
+
+        .trans-arab {
+            font-size: 20px;
+        }
+
+        .ayat {
+            font-size: 12px;
+        }
+
+        audio {
+            width: 65vw;
+            margin-top: 70px;
+            height: 80px;
+        }
+
+    
+
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="homepage">
+        <img class="imgicon" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Quran_Kareem.svg" alt="">
+        <img class="imgquran" src="https://cdn.iconscout.com/icon/free/png-256/free-quran-19-152700.png?f=webp" alt="">
+        <p class="quran">.QuranHub</p>
+        <p class="textquran">Al-Qur'an <br> Online</p>
+    </div>
+
+    <div class="garis">
+        <p class="welcome-text"><span>WELCOME TO QURANHUB</span><span>WEBSITE AL QURAN TERBAIK</span><span>WELCOME TO QURANHUB</span><span>WEBSITE AL QURAN TERBAIK</span></p>
+    </div>
+
+    <div class="container">
+        <p class="scroll1"> Scroll For More - - - → </p>
+        <div class="area-quran" id="area-quran">
+        </div>
+    </div>
+
+    <script>
+        const areaQuran = document.getElementById('area-quran')
+        const api = 'https://raw.githubusercontent.com/penggguna/QuranJSON/master/quran.json'
+
+        fetch(api).then(response => response.json()).then(data => {
+
+            const list = data;
+
+            list.forEach (el => {
+                const translate = el.name_translations
+
+                const card = document.createElement('div')
+                card.classList.add('card-quran')
+
+                const kotakNomor = document.createElement('div')
+                kotakNomor.classList.add('kotak-nomor')
+
+                const areaNama = document.createElement('div')
+                areaNama.classList.add('area-nama')
+
+                const nomorSurat = document.createElement('p')
+                nomorSurat.classList.add('nomor-surat')
+                nomorSurat.textContent = el.number_of_surah
+
+                const namaSurah = document.createElement('p')
+                namaSurah.classList.add('nama-surat')
+                namaSurah.textContent = el.name
+
+                const translateen = document.createElement('p')
+                translateen.classList.add('trans-eng')
+                translateen.textContent = translate.en
+
+                const areakanan = document.createElement('div')
+                areakanan.classList.add('area-kanan')
+
+                const transarab = document.createElement('p')
+                transarab.classList.add('trans-arab')
+                transarab.textContent = translate.ar
+
+                const ayat = document.createElement('p')
+                ayat.classList.add('ayat')
+                ayat.textContent = el.number_of_ayah + ' verses'
+
+                const audio = document.createElement('audio')
+                audio.setAttribute('controls', '')
+                audio.src = el.recitation
+                audio.controls = true
+
+                areaQuran.append(card)
+                card.append(kotakNomor)
+                kotakNomor.append(nomorSurat)
+                card.append(areaNama)
+                areaNama.append(namaSurah)
+                areaNama.append(translateen)
+                card.append(areakanan)
+                areakanan.append(transarab)
+                areakanan.append(ayat)
+                card.append(audio)
+            })
+        })
+
+
+    </script>
+    
+</body>
+</html>
