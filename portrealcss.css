@@ -1,0 +1,718 @@
+@import url(https://db.onlinewebfonts.com/c/060e116a70e3096c52db16f61aaab194?family=Sofia+Pro+Regular);
+
+@font-face {
+    font-family: "Sofia Pro Regular";
+    src: url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.eot");
+    src: url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/060e116a70e3096c52db16f61aaab194.svg#Sofia Pro Regular")format("svg");
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-foto{
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 500px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    transition: scale 0.5s ease;
+    box-shadow: 0px 0px 35px 5px #adadad;
+}
+
+.profile-foto img{
+    width: 80px;
+    height: 80px;
+    border-radius: 500px;
+}
+
+.profile-foto:hover{
+    scale: 1.15;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 100px ;
+    margin-right: 330px;
+    margin-left: 400px;
+    box-shadow: 0 10px 35px #00000025;
+    top: 30px;
+    height: 60px;
+    padding: 3px;
+}
+
+.text-header{
+    font-family: "cooper";
+    color: #000000;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.nav p{
+    font-size: 18px;
+    font-family:'Poppins' ;
+    vertical-align: top;
+    text-align: left;
+    display: flex;
+    margin: 5px;
+}
+
+.nav p a{
+    text-decoration: none;
+}
+
+.text-home{
+    background: #ffffff;
+    border-radius: 50px;
+    padding: 12px 22px 9px;
+    color: #535353;
+    font-weight: 600;
+}
+
+.text-about {
+    color: #bebebe;
+    padding: 12px 20px 9px;
+}
+
+.text-home:hover{
+    text-shadow: 0px 0px 20px #8080806b;
+}
+
+
+.text-about:hover {
+    text-shadow: 0px 0px 20px #8080806b;
+}
+
+/* .navbar{
+    width: 100vw;
+    height: 10vh;
+    background: #ffffff;
+    display: flex;
+    box-shadow: 1px 1px 5px -2px #000000;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-logo{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "cooper";
+    color: #000000;
+    font-size: 20px;
+}
+
+.navbar-item{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sofia Pro Regular";
+    font-weight: 200;
+}
+
+.navbar-item a:hover{
+    font-weight: 800;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+.list-item ul li{
+    display: inline;
+    margin: 35px;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+.btn-port a{
+    border: 2.5px solid #000000;
+    padding: 10px 35px; 
+    border-radius: 30px;
+    color: #000000;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-port a:hover {
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+    box-shadow: 0px 0px 30px rgba(255, 255, 255,);
+} */
+
+.heropertama{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f6f6f6;
+}
+
+.text-name{
+    margin-top: 150px;
+    font-family: 'Francois One';
+    text-align: center;
+}
+
+.text-small{
+    margin-bottom: -40px;
+    font-size: 40px;
+}
+
+.title-name{
+    letter-spacing: -8px;
+    font-size: 130px;
+    transition: letter-spacing 0.5s ease, text-shadow 0.5s ease;
+}
+
+.title-name:hover{
+    letter-spacing: 10px;
+    text-shadow: #00000069 0px 0px 100px;
+}
+
+.subtitle-name{
+    letter-spacing: -8px ;
+    font-size: 100px;
+    margin-top: -50px;
+    transition: letter-spacing 0.5s ease, text-shadow 0.5s ease;
+}
+
+.subtitle-name:hover{
+    letter-spacing: 10px;
+    text-shadow: #00000069 0px 0px 100px;
+}
+
+.text-soft{
+    font-size: 40px;
+    margin-top: -20px;
+}
+
+
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+
+
+.welcome-text{
+   position: relative;
+   top: -215px;
+   font-size: 100px;
+   animation: moveLeftToRight 13s linear infinite reverse;
+   white-space: nowrap;
+   font-family: 'IBM Plex Serif';
+   font-weight: 400;
+   font-style: italic;
+}
+
+.welcome-text span{
+    margin-right: 3%;
+}
+
+
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(-120%); /* Mulai dari kiri */
+    }
+    100% {
+        transform: translateX(90%); /* Berakhir di kanan */
+    }
+}
+
+.welcome-text:hover{
+    animation-play-state: paused;
+
+}
+
+.textputar{
+    position: relative;
+    top: -60px;
+    color: #757575;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.foto-cont {
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+}
+  
+.foto-cont:hover > .foto-card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+  
+.foto-card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+  
+.front,.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    border: 4px solid #3a3a3a;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+  
+.front {
+    background-image: url(examplefrontcard.JPG);
+    background-size: 110%;
+}
+  
+.back {
+    background-image: url(backflipcard.png);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-size: 100%;
+}
+
+.imgport{
+    scale: 1.2;
+    border-radius: 500px;
+    border:  5px solid#000000;
+    transition: scale 0.5s ease, box-shadow 0.5s ease, border 0.5s ease;
+   
+}
+
+.imgport:hover{
+    scale: 1.3;
+    box-shadow: 0px 0px 40px -10px;
+    border: none;
+}
+
+.name-school {
+    font-size: 45px ;
+    font-weight: 600 ;
+    font-family: 'Sofia Pro';
+    margin-top: 50px;
+}
+
+.name-text{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Poppins';
+    margin-top: 10px;
+}
+
+.name-text b {
+    font-weight: 600;
+    transition: letter-spacing 0.5s ease;
+}
+
+.name-text  b:hover{
+    letter-spacing: 2px;
+}
+
+.sosmed{
+    height: 5vh;
+    width: 16vw;
+    border: 3px solid #000000;
+    margin-top: 110% ;
+    border-radius:100px ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.sosmed-item{
+    margin: -22px;
+}
+
+.item-sosmed{
+    scale: 0.35;
+    margin-top: 3px;
+}
+
+.item-sosmed:hover{
+    width: 115px;
+}
+
+
+.circle2{
+    position: absolute;
+    scale: 0.5;
+    left: 50%;
+    
+}
+
+.line-color{
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(to bottom, #ffffff 0%, #000000 100%);
+}
+
+.hero3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    min-width: 100%;
+    background: #f6f6f6;;
+    box-sizing: border-box;
+}
+
+
+
+.titlee-hero3{
+    height: max-content;
+    font-size: 16px;
+    color: #757575;
+    font-family: 'Sofia Pro';
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.subtitle-hero3{
+    height: max-content;
+    font-size: 25px;
+    color: #3a3a3a;
+    font-family: 'Sofia Pro';
+    font-weight: 400;
+    transition: letter-spacing 0.4s ease;
+    display: flex;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 30px;
+}
+
+.subtitle-hero3:hover {
+    letter-spacing: 2px ;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 100px;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 375px;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 4px solid#000000;
+    box-shadow: 0 35px 80px rgba(255, 255, 255, 0.15);
+    transition: 0.5s;
+}
+
+.card:hover{
+    height: 400px;
+    box-shadow: 0 35px 70px rgba(255, 255, 255, 0.50);
+}
+
+.container .card .imgbx{
+    position: absolute;
+    top: 25px;
+    width: 300px;
+    height: 300px;
+    background: #8f7b7b;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgbx{
+    top: -100px;
+    scale: 0.90;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.20);
+}
+
+.container .card .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content{
+    position: absolute;
+    width: 100%;
+    padding: 0 30px ;
+    text-align: center;
+    overflow: hidden;
+    top: 335px;
+    height: 30px;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    top: 225px;
+    height: 250px;
+}
+
+.content h2{
+    font-family: 'Sofia Pro Regular';
+    margin-top: -2px;
+    font-weight: 500;
+}
+
+.content p{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Sofia Pro Regular';
+    font-weight: 100;
+    color: #808080;
+}
+
+.content a{
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    color: #000000;
+    padding: 12px 30px ;
+    text-decoration: none;
+    border: 2.5px solid #000000;
+    border-radius: 500px;
+    font-family: 'Sofia Pro Regular';
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+
+.content a:hover{
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.371);
+}
+
+.footer {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    background: #f6f6f6;
+}
+
+.footer-text {
+    margin-top: 3vh;
+    font-size: 18px;
+    font-family: 'Sofia Pro';
+    text-align: center;
+    font-weight: 300;
+}
+ 
+.dropdown{
+    display: none;
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    left: 0;
+    top: 80px;
+    padding: 10px;
+}
+
+.toggle{
+    display: none;
+}
+
+.toggle:hover .dropdown{
+    display: block;
+}
+
+@media screen and (max-width:768px){
+
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-item{
+        display: none;
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    .header{
+        height: 30vh;
+        margin-top: -8vh;
+    }
+
+    .nav{
+        scale: 0.8;
+        margin-right: -30px;
+        margin-left: -10px;
+        margin-top: 150px;
+    }
+
+    .profile-foto{
+        width: 60px;
+        height: 60px;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+    
+    .profile-foto img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .profile-foto:hover{
+        scale: 1.15;
+    }
+
+    .text-header{
+        font-size: 23px;
+        margin-top: 3px;
+    }
+    
+    .text-name{
+        margin-top: 100px;
+    }
+    
+    .text-small{
+        margin-bottom: -15px;
+        font-size: 30px;
+    }
+    
+    .title-name{
+        letter-spacing: -5px;
+        font-size: 60px;
+        transition: letter-spacing 0.5s ease, text-shadow 0.5s ease;
+    }
+    
+    .title-name:hover{
+        letter-spacing: 3px;
+        text-shadow: #00000069 0px 0px 100px;
+    }
+    
+    .subtitle-name{
+        letter-spacing: -5px ;
+        font-size: 60px;
+        margin-top: -25px;
+        transition: letter-spacing 0.5s ease, text-shadow 0.5s ease;
+    }
+    
+    .subtitle-name:hover{
+        letter-spacing: 0.5px;
+        text-shadow: #00000069 0px 0px 100px;
+    }
+    
+    .text-soft{
+        font-size: 30px;
+        margin-top: -12px;
+    }
+
+    .welcome-text{
+        top: -215px;
+        font-size: 55px;
+        font-weight: 400;
+     }
+     
+     .welcome-text span{
+         margin-right: 2%;
+     }
+     
+     
+     
+     @keyframes moveLeftToRight {
+         0% {
+             transform: translateX(-77%); /* Mulai dari kiri */
+         }
+         100% {
+             transform: translateX(65%); /* Berakhir di kanan */
+         }
+     }
+
+    .foto-cont {
+        scale: 0.8;
+        margin-top: -7vh;
+    }
+
+    .name-school {
+        font-size: 35px ;
+        font-weight: 600 ;
+        margin-top: 0px;
+    }
+    
+    .name-text{
+        font-weight: 500;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .card{
+        scale: 0.9;
+    }
+
+    .footer-text {
+        font-size: 16px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .sosmed{
+        height: 6vh;
+        width: auto;
+        border: 3px solid #000000;
+        margin-top: 110% ;
+    }
+
+    
+}
